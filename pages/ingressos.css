@@ -1,0 +1,91 @@
+@import url('../style.css');
+
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ticket {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    background: var(--panel);
+    padding: 40px;
+}
+
+.ticket h2 {
+    font: 500 38px "Playfair Display", serif;
+    margin: 8px 0;
+}
+
+.ticket p {
+    color: var(--muted);
+    max-width: 620px;
+}
+
+.ticket ul {
+    margin: 24px 0 0 18px;
+}
+
+.ticket li {
+    margin: 5px 0;
+}
+
+/* Ingresso em destaque (roxo) */
+
+.featured-ticket {
+    background: var(--violet);
+}
+
+.featured-ticket .ticket-label {
+    color: var(--lime);
+}
+
+.featured-ticket p {
+    color: #eee8ff;
+}
+
+/* Coluna do preço */
+
+.ticket-price {
+    border-left: 1px dashed #55504a;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ticket-price strong {
+    color: var(--lime);
+    font: 500 42px "Playfair Display", serif;
+}
+
+.ticket-price span {
+    color: var(--muted);
+    margin-bottom: 24px;
+}
+
+.dark-button {
+    background: var(--black);
+    color: var(--cream);
+}
+
+@media (max-width: 850px) {
+    .ticket {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .ticket-price {
+        border: 0;
+        border-top: 1px dashed #55504a;
+        padding: 25px 0 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .ticket {
+        padding: 25px;
+    }
+}

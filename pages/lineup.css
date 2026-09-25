@@ -1,0 +1,92 @@
+@import url('../style.css');
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.day-title {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 18px;
+    margin-bottom: 10px;
+}
+
+.day-title p {
+    color: var(--lime);
+    font-weight: 600;
+}
+
+.day-title h2 {
+    font: 500 42px "Playfair Display", serif;
+}
+
+/* Linha de cada artista: foto, nome, horário e palco */
+
+.artist-row {
+    min-height: 115px;
+    display: grid;
+    grid-template-columns: 80px 1fr 100px 160px;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #292724;
+}
+
+.artist-row img {
+    width: 64px;
+    height: 64px;
+}
+
+.artist-name h3 {
+    font: 500 26px "Playfair Display", serif;
+}
+
+.artist-name span,
+.artist-row > span {
+    color: var(--muted);
+}
+
+.artist-row > strong {
+    color: var(--violet);
+    font: 500 24px "Playfair Display", serif;
+}
+
+@media (max-width: 850px) {
+    .artist-row {
+        grid-template-columns: 64px 1fr 80px;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    .artist-row > span {
+        grid-column: 2/4;
+        margin-top: -12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .day-title {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .artist-row {
+        grid-template-columns: 56px 1fr;
+    }
+
+    .artist-row > strong,
+    .artist-row > span {
+        grid-column: 2;
+    }
+
+    .artist-row > strong {
+        margin-top: -8px;
+    }
+
+    .artist-row > span {
+        margin-top: -18px;
+    }
+}

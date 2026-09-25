@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 470">
+<rect width="700" height="470" fill="#211f1c"/>
+<g stroke="#39352e" stroke-width="28">
+<path d="M0 90H700M0 230H700M0 390H700M120 0V470M340 0V470M570 0V470"/>
+</g>
+<g stroke="#5a554d" stroke-width="2">
+<path d="M0 90H700M0 230H700M0 390H700M120 0V470M340 0V470M570 0V470"/>
+</g>
+<path d="M110 350 C180 280 235 255 330 230 C410 210 480 145 590 100" fill="none" stroke="#d7e66b" stroke-width="7" stroke-dasharray="12 10"/>
+<circle cx="110" cy="350" r="18" fill="#f1eadb"/>
+<text x="110" y="356" text-anchor="middle" font-family="Arial" font-size="16" fill="#151514">M</text>
+<rect x="500" y="60" width="145" height="92" fill="#7c5cff"/>
+<text x="572" y="98" text-anchor="middle" font-family="Georgia" font-size="19" fill="#fff">ARMAZÉM</text>
+<text x="572" y="124" text-anchor="middle" font-family="Georgia" font-size="19" fill="#fff">VÉRTICE</text>
+<text x="35" y="65" font-family="Arial" font-size="15" fill="#aaa396">Av. Francisco Matarazzo</text>
+<text x="370" y="455" font-family="Arial" font-size="15" fill="#aaa396">Rua do Trilho</text>
+<text x="84" y="356" text-anchor="end" font-family="Arial" font-size="15" fill="#aaa396">Barra Funda</text>
+</svg>

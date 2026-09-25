@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+    --black: #151514;
+    --panel: #211f1c;
+    --cream: #f1eadb;
+    --muted: #aaa396;
+    --line: #39352e;
+    --violet: #7c5cff;
+    --lime: #d7e66b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--black);
+    color: var(--cream);
+    font: 16px/1.6 "DM Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Cabeçalho */
+
+.header {
+    border-bottom: 1px solid var(--line);
+}
+
+.header-inner,
+.hero,
+.section,
+.page,
+.footer {
+    width: min(1120px, calc(100% - 48px));
+    margin: auto;
+}
+
+.header-inner {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.logo {
+    color: var(--lime);
+    font: italic 30px "Playfair Display", serif;
+}
+
+.menu {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.menu a {
+    color: var(--muted);
+    padding: 29px 0 8px;
+    border-bottom: 1px solid transparent;
+}
+
+.menu a:hover,
+.menu .active {
+    color: var(--cream);
+    border-color: var(--lime);
+}
+
+/* Elementos usados em várias páginas */
+
+.eyebrow,
+.ticket-label {
+    color: var(--lime);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    background: var(--lime);
+    color: var(--black);
+    padding: 14px 24px;
+    font: 600 16px "DM Sans", sans-serif;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .85;
+}
+
+.text-link {
+    border-bottom: 1px solid var(--lime);
+    padding-bottom: 4px;
+}
+
+/* Página inicial */
+
+.hero {
+    min-height: 690px;
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    padding: 70px 0;
+}
+
+.hero .eyebrow {
+    margin-bottom: 18px;
+}
+
+.hero h1,
+.page-intro h1 {
+    font: 500 clamp(72px, 9vw, 128px)/.86 "Playfair Display", serif;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: var(--violet);
+    font-style: italic;
+}
+
+.hero-text {
+    max-width: 520px;
+    margin: 34px 0 24px;
+    color: var(--muted);
+    font-size: 21px;
+}
+
+.event-data {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--muted);
+}
+
+.event-data strong {
+    color: var(--cream);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 38px;
+}
+
+/* O quadrado de fundo é o próprio .hero-art e fica parado.
+   Só a imagem do disco (img) gira. */
+.hero-art {
+    justify-self: end;
+    width: min(470px, 100%);
+    background: var(--panel);
+    overflow: hidden;
+}
+
+.hero-art img {
+    animation: spin 18s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section {
+    padding: 100px 0;
+    border-top: 1px solid var(--line);
+}
+
+.section-heading h2 {
+    font: 500 clamp(42px, 5vw, 68px)/1 "Playfair Display", serif;
+}
+
+.artist-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 60px;
+}
+
+.feature-card {
+    background: var(--panel);
+}
+
+.feature-card img {
+    width: 100%;
+    aspect-ratio: 1/.72;
+    object-fit: cover;
+}
+
+.feature-card div {
+    padding: 24px;
+}
+
+.feature-card span {
+    color: var(--lime);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.feature-card h3 {
+    font: 500 30px "Playfair Display", serif;
+    margin: 8px 0;
+}
+
+.feature-card p,
+.manifesto-grid {
+    color: var(--muted);
+}
+
+.big-quote {
+    max-width: 950px;
+    font: clamp(38px, 5vw, 70px)/1.05 "Playfair Display", serif;
+}
+
+.manifesto-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 50px;
+    margin-top: 45px;
+}
+
+.manifesto-grid p {
+    max-width: 600px;
+}
+
+/* Páginas internas */
+
+.page {
+    padding: 110px 0;
+}
+
+.page-intro {
+    max-width: 800px;
+    margin-bottom: 100px;
+}
+
+.page-intro h1 {
+    font-size: clamp(66px, 8vw, 110px);
+}
+
+.page-intro > p:last-child {
+    max-width: 720px;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 20px;
+}
+
+/* Rodapé */
+
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 35px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--muted);
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer strong {
+    color: var(--cream);
+}
+
+/* Tablet e celular */
+
+@media (max-width: 850px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 22px 0;
+    }
+
+    .menu {
+        width: 100%;
+        gap: 18px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .menu a {
+        padding: 5px 0;
+        white-space: nowrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+    }
+
+    .hero-art {
+        justify-self: start;
+        max-width: 480px;
+    }
+
+    .artist-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .header-inner,
+    .hero,
+    .section,
+    .page,
+    .footer {
+        width: min(100% - 30px, 1120px);
+    }
+
+    .hero h1,
+    .page-intro h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .buttons {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .page {
+        padding: 75px 0;
+    }
+
+    .page-intro {
+        margin-bottom: 65px;
+    }
+}

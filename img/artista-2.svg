@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360">
+<rect width="500" height="360" fill="#211f1c"/>
+<circle cx="250" cy="180" r="145" fill="#d7e66b" opacity=".9"/>
+<circle cx="250" cy="180" r="95" fill="none" stroke="#7c5cff" stroke-width="8"/>
+<path d="M90 260 Q250 70 410 260" fill="none" stroke="#151514" stroke-width="26"/>
+<circle cx="250" cy="145" r="43" fill="#7c5cff"/>
+<path d="M175 285 Q250 205 325 285" fill="#7c5cff"/>
+<text x="250" y="345" text-anchor="middle" font-family="Arial" font-size="16" letter-spacing="4" fill="#f1eadb">VÉRTICE 2026</text>
+</svg>

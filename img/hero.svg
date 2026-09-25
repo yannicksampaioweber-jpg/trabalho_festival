@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<circle cx="300" cy="300" r="220" fill="#151514" stroke="#39352e" stroke-width="2"/>
+<circle cx="300" cy="300" r="178" fill="none" stroke="#39352e" stroke-width="2"/>
+<circle cx="300" cy="300" r="135" fill="none" stroke="#39352e" stroke-width="2"/>
+<path d="M90 330 C190 150 380 150 510 280 C420 230 300 250 210 390 C170 450 120 430 90 330Z" fill="#7c5cff"/>
+<circle cx="300" cy="300" r="62" fill="#d7e66b"/>
+<circle cx="300" cy="300" r="15" fill="#151514"/>
+<path d="M300 65V535M65 300H535" stroke="#d7e66b" stroke-width="1" opacity=".4"/>
+<text x="300" y="277" text-anchor="middle" font-family="Georgia" font-size="16" fill="#151514">VÉRTICE</text>
+</svg>

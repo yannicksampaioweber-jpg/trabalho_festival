@@ -1,0 +1,98 @@
+@import url('../style.css');
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr .72fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* Perguntas */
+
+.questions details {
+    border-top: 1px solid var(--line);
+    padding: 22px 0;
+}
+
+.questions details:last-child {
+    border-bottom: 1px solid var(--line);
+}
+
+.questions summary {
+    cursor: pointer;
+    list-style: none;
+    font: 24px "Playfair Display", serif;
+}
+
+.questions summary::-webkit-details-marker {
+    display: none;
+}
+
+.questions summary::after {
+    content: '+';
+    float: right;
+    color: var(--lime);
+}
+
+.questions details[open] summary::after {
+    content: '−';
+}
+
+.questions details p {
+    color: var(--muted);
+    margin-top: 15px;
+    max-width: 620px;
+}
+
+/* Formulário */
+
+.contact-form {
+    background: var(--panel);
+    padding: 38px;
+}
+
+.contact-form h2 {
+    font: 500 38px "Playfair Display", serif;
+}
+
+.contact-form > p {
+    color: var(--muted);
+    margin: 8px 0 35px;
+}
+
+.contact-form label {
+    display: block;
+    color: var(--muted);
+    margin: 20px 0 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #514c43;
+    background: transparent;
+    color: var(--cream);
+    padding: 10px 0;
+    font: inherit;
+    outline: 0;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--lime);
+}
+
+.contact-form .button {
+    margin-top: 30px;
+}
+
+@media (max-width: 850px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}

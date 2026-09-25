@@ -1,0 +1,72 @@
+@import url('../style.css');
+
+.info-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.info-content h2 {
+    font: 500 36px "Playfair Display", serif;
+    margin-bottom: 15px;
+}
+
+.info-content > h2:not(:first-child) {
+    margin-top: 55px;
+}
+
+.transport {
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+}
+
+.transport strong {
+    color: var(--lime);
+}
+
+.transport p {
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.map-box {
+    background: var(--panel);
+    padding: 20px;
+}
+
+.map-box img {
+    width: 100%;
+}
+
+/* O que levar / o que não levar */
+
+.rules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 100px;
+    border-top: 1px solid var(--line);
+    padding-top: 70px;
+}
+
+.rules h2 {
+    font: 500 40px "Playfair Display", serif;
+    margin-bottom: 25px;
+}
+
+.rules ul {
+    margin-left: 18px;
+    color: var(--muted);
+}
+
+.rules li {
+    margin: 10px 0;
+}
+
+@media (max-width: 850px) {
+    .info-grid,
+    .rules {
+        grid-template-columns: 1fr;
+    }
+}
